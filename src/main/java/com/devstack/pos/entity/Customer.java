@@ -2,6 +2,7 @@ package com.devstack.pos.entity;
 
 import lombok.*;
 
+/*Lombok*/
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
