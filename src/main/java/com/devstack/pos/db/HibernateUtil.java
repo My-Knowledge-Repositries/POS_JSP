@@ -1,4 +1,4 @@
-package com.devstack.pos.bo;
+package com.devstack.pos.db;
 
 import com.devstack.pos.entity.Customer;
 import org.hibernate.Session;
