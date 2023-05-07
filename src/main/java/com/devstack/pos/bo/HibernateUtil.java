@@ -1,4 +1,4 @@
-package com.devstack.pos.db;
+package com.devstack.pos.bo;
 
 import com.devstack.pos.entity.Customer;
 import org.hibernate.Session;
@@ -15,11 +15,8 @@ public class HibernateUtil {
     private HibernateUtil() {
     }
 
-    public static HibernateUtil getInstance(){
-        return SessionFactory
-    }
 
-    public static SessionFactory buildSessionFactory(){
+    private static SessionFactory buildSessionFactory(){
         StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder()
                 .configure("hibernate.cfg.xml")
                 .build();
@@ -35,7 +32,7 @@ public class HibernateUtil {
                 .build();
     }
 
-    public Session openSession() {
+    public static Session openSession() {
         return sessionFactory.openSession();
     }
 }
