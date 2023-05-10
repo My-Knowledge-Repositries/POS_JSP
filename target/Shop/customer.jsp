@@ -63,7 +63,6 @@
       url:'http://localhost:8080/customer',
       method:"POST",
       data:{},
-      data_type:'json',
       success:function (response) {
         console.log(response)
       }
